@@ -7,6 +7,11 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+# Code ini original dibuat oleh
+# Nur Achmad Budy Kurniawan
+# https://github.com/AchmadBudy
+
+
 BOT_NAME = 'tugas1'
 
 SPIDER_MODULES = ['tugas1.spiders']
