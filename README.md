@@ -41,6 +41,7 @@ Perintah diatas akan menghasilkan data review pada ubhara dalam csv.
 
 ### Tugas3
 Pada tugas 3 lagi lagi karena perintah tugas menggunakan API standard Twitter maka dengan keterbatasan akun yang dimiliki juga mengakibatkan hasil dari search tidak menampilan semua yang ditemukan.
+Dan jangan lupa untuk mengganti `OAuth 2.0 Bearer Token auth` pada `header` di `tugas3\tugas3\spiders\twittersearch.py` pada variable `headers` menjadi `OAuth 2.0 Bearer Token auth` milik anda. karena `OAuth 2.0 Bearer Token auth` nya akan saya revoke setelah submit tugas.
 ```
 $ cd tugas3
 $ scrapy crawl twittersearch -O [namafile].csv
