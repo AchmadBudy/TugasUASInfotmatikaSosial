@@ -34,9 +34,8 @@ class absenSpider(scrapy.Spider):
             self.juduls.append(item.css("div.kt-widget__top > div:nth-child(3) > div > a::text").get().strip())
             self.links.append(item.css("div.kt-widget__bottom > div:nth-child(2) > div.kt-widget__details > a::attr(href)").get())
 
-        # print(len(self.links))
+
         for link in range(len(self.links)):
-            # print(f'http://sim.ubhara.ac.id{self.links[link]}')
             yield scrapy.Request(
                 url = f'http://sim.ubhara.ac.id{self.links[link]}',
                 headers = self.headers,
